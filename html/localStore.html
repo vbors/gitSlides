@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section class="container-flex h-100 ">
+
+    <div class="row h-100">
+        <a class="col-1 mr-auto my-auto prev" href="storeDiff.html"><span>Previous</span></a>
+        <div class="col-10 mx-auto">
+            <div class="col-12 title">
+                <h1 class="display-4 ">Nearly Every Operation Is Local</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 my-auto">
+                <ul class="list-unstyled w-100">
+                    <li class="">
+                        <h2><b>CVS</b> - Require internet connection for most operations</h2>
+                        <div class="mr-auto col-10">
+                        </div>
+                    </li>
+                    <li class="">
+                        <h2><b>Git</b> - Most operations in Git only need local files and resources to operate.</h2>
+                        <div class="mr-auto col-10">
+                            <ul>
+                                <li><h5>History</h5></li>
+                                <li><h5>Commit</h5></li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <span class="text-muted"> Because you have the entire history of the project right there on your local disk, most operations seem almost instantaneous.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-12 title mt-5">
+                <h1 class="display-4 ">Git Has Integrity</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 my-auto">
+                <h2>Everything in Git is check-summed before it is stored and is then referred to by that checksum</h2>
+                <span class="text-muted">This means it’s impossible to change the contents of any file or directory without Git knowing about it</span>
+                <blockquote class="blockquote">24b9da6552252987aa493b52f8696cd6d3b00373</blockquote>
+            </div>
+
+
+            <div class="col-12 title mt-5">
+                <h1 class="display-4 ">Git Generally Only Adds Data</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 my-auto">
+                <h2>When you do actions in Git, nearly all of them only add data to the Git database.</h2>
+                <span class="text-muted">This makes using Git a joy because we know we can experiment without the danger of severely screwing things up. </span>
+            </div>
+        </div>
+
+        <a class="col-1 ml-auto my-auto next" href="theThreeStates.html"><span>Next</span></a>
+    </div>
+
+</section>
+</body>
+</html>

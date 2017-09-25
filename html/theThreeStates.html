@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section class="container-flex h-100 ">
+
+    <div class="row h-100">
+        <a class="col-1 mr-auto my-auto prev" href="localStore.html"><span>Previous</span></a>
+        <div class="col-10 mx-auto content h4">
+            <div class="col-12 title">
+                <h1 class="display-4 ">The Three States</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 h-100 ">
+                <h2 class="col-12">Git has three main states that your files can reside in: <b>committed, modified, and staged.</b></h2>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/threeStates.png" class="d-flex"/>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                        <p><b>Working directory</b> - is where Git stores the metadata and object database for your project, it is what is copied when you clone a repository</p>
+                        <p><b>Staging area [index]</b> - generally contained in your Git directory, that stores information about what will go into your next commit.</p>
+                        <p><b>.git directory</b> - your local repository.</p>
+                </div>
+                <div class="col-12 mt-2">
+                    <p>The basic Git workflow goes something like this:</p>
+                    <ol >
+                        <li>You modify files in your working tree.</li>
+                        <li>You stage the files, adding snapshots of them to your staging area.</li>
+                        <li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory into HEAD</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+
+        <a class="col-1 ml-auto my-auto next" href="theThreeStatesCommands.html"><span>Next</span></a>
+    </div>
+
+</section>
+</body>
+</html>

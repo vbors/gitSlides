@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .prev,
+        .next{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .prev:hover,
+        .next:hover{
+            border: 1px gray solid;
+        }
+    </style>
+</head>
+<body>
+<section class="container-flex" style="min-height: 100%">
+
+    <div class="row h-100">
+        <div class="col-1 ">
+            <a class="h-100 prev" href="commandCheckout.html"><span class="m-auto">Previous</span></a>
+        </div>
+        <div class="col-10 mx-auto content h4">
+            <div class="col-12 title">
+                <h1 class="display-4 ">Workflow Commands - Remote Repository</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 ">
+                <div class="col-12">
+                    <span class="text-danger h2">git clone</span>
+                    <span> - Clone a repository into a new directory</span>
+                    <p class="mt-5">Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository
+                        (visible using <span class="text-danger">git branch -r</span>), and creates and checks out an initial branch that is forked from the cloned
+                        repository’s currently active branch.</p>
+                </div>
+                <div class="col-12">
+                    <div class="col-6 mx-auto mt-2">
+                        <img src="../resources/img/git-operations.png" class="d-flex w-100"/>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">We clone an existing repository with command <span class="text-danger">git clone [remote_repo] </span>
+                    where [remote_repo] is the repository link.</div>
+                <div class="col-12 mt-3">Example <span class="text-danger">git clone git://git.kernel.org/pub/scm/git/git.git</span>, this will checkout the branch <span class="text-danger">master</span></div>
+                <div class="col-12 mt-3">Usual we clone an branch with command <span class="text-danger">git clone -b [branch] [remote_repo] </span> where <b>-b</b> will move HEAD to the new local branch</div>
+
+            </div>
+        </div>
+
+        <div class="col-1 ">
+            <a class="h-100 next" href="example-reset.html"><span class="m-auto">Next</span></a>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

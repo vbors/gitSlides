@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .prev,
+        .next{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .prev:hover,
+        .next:hover{
+            border: 1px gray solid;
+        }
+    </style>
+</head>
+<body>
+<section class="container-flex" style="min-height: 100%">
+
+    <div class="row h-100">
+        <div class="col-1 ">
+            <a class="h-100 prev" href="theThreeStatesCommands.html"><span class="m-auto">Previous</span></a>
+        </div>
+        <div class="col-10 mx-auto content h4">
+            <div class="col-12 title">
+                <h1 class="display-4 ">Workflow Commands - Reset</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 ">
+                <div class="col-12 mt-5">
+                    <span class="text-danger h2">git reset</span>
+                    <span> - The first thing reset will do is move what HEAD points to. Unlike checkout it does not move what branch HEAD points to,
+                        it directly changes the SHA of the reference itself.</span>
+                    <p>This means if HEAD is pointing to the 'master' branch,
+                        running <span class="text-danger">git reset 9e5e6a4</span> will first of all make 'master' point to 9e5e6a4 before it does anything else.</p>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <span class="text-danger h2">git reset --soft HEAD~ </span>
+                    <span> - it are moving the branch back to where it was without changing the Index (staging area) or Working Directory. You could now do a bit more work and commit again. <span class="text-warning">like svn revert</span></span>
+                    <p class="text-muted"><span class="text-danger">HEAD~</span> - the parent revision of HEAD</p>
+                </div>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/reset-soft.png" class="d-flex w-100"/>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <span class="text-danger h2">git reset --mixed HEAD~</span>
+                    <span> - to update the Index with the contents of whatever tree HEAD now points to.</span>
+                    <p>It still undid your last commit, but also unstaged everything. You rolled back to before you ran all your git adds AND git commit.</p>
+                </div>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/reset-mixed.png" class="d-flex w-100"/>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <span class="text-danger h2">git reset --hard HEAD~</span>
+                    <span> - make the Working Directory look like the Index</span>
+                    <p>It undid your last commit, all the git adds, and all the work you did in your working directory.</p>
+                </div>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/reset-hard.png" class="d-flex w-100"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-1 ">
+            <a class="h-100 next" href="example-reset.html"><span class="m-auto">Next</span></a>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

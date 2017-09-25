@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section class="container-flex h-100 ">
+
+    <div class="row h-100">
+        <a class="col-1 mr-auto my-auto prev" href="title.html"><span>Previous</span></a>
+        <div class="col-10 mx-auto content">
+            <div class="row title">
+                <h1 class="display-4 ">Snapshots, Not Differences</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12">
+                <ul class="list-group w-100">
+                    <li class="list-group-item text-center">
+                        <h2><b>CVS</b> - Storing data as changes to a base version of each file.</h2>
+                        <div class="m-auto w-50">
+                            <img src="../resources/img/deltas.png" class="d-flex"/>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <h2><b>Git</b> - Storing data as snapshots of the project over time.</h2>
+                        <div class="m-auto w-50">
+                            <img src="../resources/img/snapshots.png" class="d-flex"/>
+                        </div>
+                        <div class="col-12">
+                            <span class="text-muted">Git doesn’t store the file again, just a link to the previous identical file it has already stored.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <a class="col-1 ml-auto my-auto next" href="localStore.html"><span>Next</span></a>
+    </div>
+
+</section>
+</body>
+</html>

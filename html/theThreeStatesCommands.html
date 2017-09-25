@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .prev,
+        .next{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .prev:hover,
+        .next:hover{
+            border: 1px gray solid;
+        }
+    </style>
+</head>
+<body>
+<section class="container-flex" style="min-height: 100%">
+
+    <div class="row h-100">
+        <div class="col-1 ">
+            <a class="h-100 prev" href="theThreeStates.html"><span class="m-auto">Previous</span></a>
+        </div>
+        <div class="col-10 mx-auto content h4">
+            <div class="col-12 title">
+                <h1 class="display-4 ">The Three States Workflow Commands</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 ">
+                <div class="col-12 mt-2">
+                    <span>The <b>HEAD</b> in Git is the pointer to the current branch reference, which is in turn a pointer to the last commit you made or the last commit that was checked out into your working directory. </span>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <span class="text-danger h2">git init</span>
+                    <span> - create a Git repository with a HEAD reference that points to an unborn branch (aka, nothing)</span>
+                </div>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/threeStatesHead.png" class="d-flex"/>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <span class="text-danger h2">git add</span>
+                    <span> - take content in your Working Directory and populate our Index with the updated content</span>
+                </div>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/threeStatesAdd.png" class="d-flex"/>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <span class="text-danger h2">git commit</span>
+                    <span> - take what the Index looks like now and save it as a permanent snapshot pointed to by a commit, which HEAD is then updated to point at.</span>
+                </div>
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/threeStatesCommit.png" class="d-flex"/>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    Edit -> git add -> git commit
+                </div>
+
+                <div class="col-12">
+                    <div class="col-5 mx-auto mt-2">
+                        <img src="../resources/img/threeStatesCommitV2.png" class="d-flex"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-1 ">
+            <a class="h-100 next" href="commandReset.html"><span class="m-auto">Next</span></a>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
