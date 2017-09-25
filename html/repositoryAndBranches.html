@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git tutorial</title>
+    <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        .prev,
+        .next{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .prev:hover,
+        .next:hover{
+            border: 1px gray solid;
+        }
+    </style>
+</head>
+<body>
+<section class="container-flex" style="min-height: 100%">
+
+    <div class="row h-100">
+        <div class="col-1 ">
+            <a class="h-100 prev" href="example-reset.html"><span class="m-auto">Previous</span></a>
+        </div>
+        <div class="col-10 mx-auto content h4">
+            <div class="col-12 title">
+                <h1 class="display-4 ">Repositories and Branches</h1>
+                <hr class="w-100"/>
+            </div>
+            <div class="content col-12 ">
+                <div class="col-12">
+                    <span class="h2"></span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">Remote Repository</span>
+                    <span> - Repository installed on one remote server, contains one or multiple branches or tags</span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">Local Repository</span>
+                    <span> - Repository installed on local computer, can be linked with an Remote Repository</span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">Branch</span>
+                    <span> - A development line, a bach of changes for a version or feature</span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">Tag</span>
+                    <span> - A branch that will not change in the future (Release version)</span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">Remote Branch</span>
+                    <span> - A development line from one Remote Repository</span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">Local Branch</span>
+                    <span> - A development line from Local Repository, can be linked to an Remote Branch</span>
+                    <p>Usual the remote branch is refered with name <span class="text-danger">origin/master</span> where master is the branch name.</p>
+                </div>
+
+                <div class="col-12">
+                    <div class="col-6 mx-auto mt-2">
+                        <img src="../resources/img/remote-branches-1_1.png" class="d-flex w-100"/>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="col-12"/>
+                    <div class="col-6 mx-auto my-2">
+                        <img src="../resources/img/remote-branches-3.png" class="d-flex w-100"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1 ">
+            <a class="h-100 next" href="commandClone.html"><span class="m-auto">Next</span></a>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
