@@ -26,34 +26,47 @@
                 <div class="col-12">
                     <span class="text-danger h2">git clone</span>
                     <span> - Clone a repository into a new directory</span>
-                    <p class="mt-5">Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository
-                        (visible using <span class="text-danger">git branch -r</span>), and creates and checks out an initial branch that is forked from the cloned
-                        repository’s currently active branch.</p>
+                    <p class="">Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository
+                        , and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.</p>
                 </div>
-                <div class="col-12 mt-5">We clone an existing repository with command <span class="text-danger">git clone [remote_repo] </span>
+                <div class="col-12 ">We clone an existing repository with command <span class="text-danger">git clone [remote_repo] </span>
                     where [remote_repo] is the repository link.</div>
-                <div class="col-12 mt-3">Example <span class="text-danger">git clone git://git.kernel.org/pub/scm/git/git.git</span>, this will checkout the branch <span class="text-danger">master</span></div>
-                <div class="col-12 mt-3">Usual we clone an branch with command <span class="text-danger">git clone -b [branch] [remote_repo] </span> where <b>-b</b> will move HEAD to the new local branch</div>
+                <div class="col-12 ">Example: <span class="text-danger">git clone username@host:/path/to/repository</span>, this will checkout the active branch <span class="text-danger">master</span>.</div>
+                <div class="col-12 "><span class="text-danger">git clone -b [branch] [remote_repo] </span> Clone only one remote branch, where <b>-b</b> will move HEAD to the new local branch</div>
 
-                <div class="col-12">
+                <div class="col-12 mt-3">
                     <span class="text-danger h2">git fetch</span>
                     <span> - Update local repository from remote </span>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-3">
                     <span class="text-danger h2">git pull</span>
                     <span> - Fetch from and integrate with another repository or a local branch = <span class="text-danger">git fetch;  git merge FETCH_HEAD</span></span>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-3">
                     <span class="text-danger h2">git push</span>
-                    <span> - Updates remote refs using local refs, while sending objects necessary to complete the given refs.<span class="text-warning">like CVS commit</span></span>
+                    <span> - Updates remote refs using local refs, while sending objects necessary to complete the given refs.</span>
+                    <p><span class="text-danger">git push origin [branchname]</span></p>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-3">
                     <span class="text-danger h2">git branch</span>
                     <span> - list all branches. <span class="text-danger"> -r</span> flag will filter only by remote branches</span>
                 </div>
-                <div class="col-12">
-                    <span class="text-danger h2">git branch [branchname]</span>
+                <div class="col-12 mt-3">
+                    <span class="text-danger h2">git branch -b [branchname]</span>
                     <span> - Create new local branch, referencing the same point in history as the current branch.</span>
+                </div>
+                <div class="col-12 mt-3">
+                    <span class="text-danger h2">git branch -d [branchname]</span>
+                    <span> - Delete local branch</span>
+                </div>
+                <div class="col-12 mt-3">
+                    <span class="text-danger h2">git merge [branchname]</span>
+                    <span> - Merge another branch [branchname] into your active branch (HEAD) </span>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <span class="text-danger h2">git tag jump-2.8.0 1b2e1d63ff</span>
+                    <span> - Create a new tag named jump-2.8.0 the 1b2e1d63ff stands for the first 10 characters of the commit id you want to reference with your tag.</span>
                 </div>
 
             </div>
