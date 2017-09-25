@@ -8,3 +8,18 @@
     font-weight: bold;
     margin:auto;
 }
+html, body {
+    height: 100%;
+}
+
+.prev,
+.next{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.prev:hover,
+.next:hover{
+    border: 1px gray solid;
+}
