@@ -30,15 +30,31 @@
                         (visible using <span class="text-danger">git branch -r</span>), and creates and checks out an initial branch that is forked from the cloned
                         repository’s currently active branch.</p>
                 </div>
-                <div class="col-12">
-                    <div class="col-6 mx-auto mt-2">
-                        <img src="../resources/img/git-operations.png" class="d-flex w-100"/>
-                    </div>
-                </div>
                 <div class="col-12 mt-5">We clone an existing repository with command <span class="text-danger">git clone [remote_repo] </span>
                     where [remote_repo] is the repository link.</div>
                 <div class="col-12 mt-3">Example <span class="text-danger">git clone git://git.kernel.org/pub/scm/git/git.git</span>, this will checkout the branch <span class="text-danger">master</span></div>
                 <div class="col-12 mt-3">Usual we clone an branch with command <span class="text-danger">git clone -b [branch] [remote_repo] </span> where <b>-b</b> will move HEAD to the new local branch</div>
+
+                <div class="col-12">
+                    <span class="text-danger h2">git fetch</span>
+                    <span> - Update local repository from remote </span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">git pull</span>
+                    <span> - Fetch from and integrate with another repository or a local branch = <span class="text-danger">git fetch;  git merge FETCH_HEAD</span></span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">git push</span>
+                    <span> - Updates remote refs using local refs, while sending objects necessary to complete the given refs.<span class="text-warning">like CVS commit</span></span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">git branch</span>
+                    <span> - list all branches. <span class="text-danger"> -r</span> flag will filter only by remote branches</span>
+                </div>
+                <div class="col-12">
+                    <span class="text-danger h2">git branch [branchname]</span>
+                    <span> - Create new local branch, referencing the same point in history as the current branch.</span>
+                </div>
 
             </div>
         </div>
