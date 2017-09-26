@@ -24,7 +24,7 @@
             </div>
             <div class="content col-12 ">
                 <h2 class="col-12">Git store the configuration into gitconfig files</h2>
-                <ul class="col-12 mt-5 ml-5">
+                <ul class="col-12 mt-3 ml-5">
                     <li><span class="text-danger">/etc/gitconfig</span> file: Contains values for every user on the system and all their repositories <span class="text-danger">--system</span></li>
                     <li><span class="text-danger">~/.gitconfig</span> or <span class="text-danger">~/.config/git/config</span> file: Specific to your user. <span class="text-danger">--global</span></li>
                     <li><span class="text-danger">.git/config</span> file: Repository you’re currently using: Specific to that single repository</li>
@@ -32,15 +32,20 @@
 
                 <h2 class="col-12 mt-5">Set your Identity</h2>
                 <div class="col-12 mt-5">
-                    <blockquote class="blockquote">
-                        <p>$ git config --global user.name "Vasile Bors"</p>
-                        <p>$ git config --global user.email vasile.bors@kronsoft.eu</p>
-                    </blockquote>
+                    <p class="text-danger">$ git config --global user.name "Vasile Bors"</p>
+                    <p class="text-danger">$ git config --global user.email vasile.bors@kronsoft.eu</p>
                 </div>
 
-                <h2 class="col-12">Checking Your Settings</h2>
-                <div class="col-12 mt-5">
-                    <blockquote class="blockquote">$ git config --list</blockquote>
+                <h2 class="col-12 mt-5">Avoid line-ending issues </h2>
+                <ul class="col-12 mt-3 ml-5">
+                    <li >Windows: <span class="text-danger">$ git config --global core.autocrlf <b>true</b></span></li>
+                    <li >Linux: <span class="text-danger">$ git config --global core.autocrlf <b>false</b></span></li>
+                    <li >Mac: <span class="text-danger">$ git config --global core.autocrlf <b>input</b></span></li>
+                </ul>
+
+                <h2 class="col-12 mt-5">Checking Your Settings</h2>
+                <div class="col-12 mt-3">
+                    <p class="text-danger">$ git config --list</p>
                 </div>
 
             </div>
