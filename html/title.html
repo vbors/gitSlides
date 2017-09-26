@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Git tutorial</title>
+
+    <script src="../resources/vendors/jquery-3.2.1.min.js" type="application/javascript" ></script>
+
     <link href="../resources/vendors/bootstrap/css/bootstrap.css" type="text/css"  rel="stylesheet"/>
     <script src="../resources/vendors/bootstrap/js/bootstrap.js" type="application/javascript" ></script>
 
     <link href="../resources/css/style.css" type="text/css"  rel="stylesheet"/>
     <script src="../resources/js/scripts.js" type="application/javascript" ></script>
+
 
 </head>
 <body>
@@ -16,9 +20,14 @@
     <div class="row h-100">
         <a class="col-1 mr-auto my-auto prev" href="title.html"><span>Previous</span></a>
         <div class="col-10 m-auto content">
-            <div class="jumbotron m-auto w-50">
-                <h1 class="display-3 d-inline">Git</h1>
-                <span class="lead">Getting Started</span>
+            <div id="clickTitle" class="jumbotron m-auto col-6" >
+                <!--<h1 class="display-3 d-inline"><b>Git</b></h1>-->
+                <img src="../resources/img/Git-Logo-2Color.png" class="d-flex w-100"/>
+                <span class="lead float-right"><b>Getting Started</b></span>
+            </div>
+
+            <div class="col-6 mx-auto" style="display:none; ">
+                <img id="cats" src="../resources/img/cats.jpg" class="d-flex w-100"/>
             </div>
         </div>
 
@@ -26,5 +35,13 @@
     </div>
 
 </section>
+<script type="application/javascript">
+    $( document ).ready(function (){
+        $('#clickTitle').click(function (event) {
+            $('#cats').parent().show();
+            document.getElementById('cats').scrollIntoView(true);
+        });
+    });
+</script>
 </body>
 </html>
